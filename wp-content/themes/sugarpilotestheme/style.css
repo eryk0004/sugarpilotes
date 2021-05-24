@@ -1,0 +1,18 @@
+/* CSS Document
+
+Theme Name:    Sugar Pilotes Special
+Template:    chocowp
+Author:      Eryk Piotr Munk
+Version:      1.0.1
+Description:  Stylish Child Theme based on ChocoWP
+
+*/
+
+.entry .entry-title::before {
+    background: #767676;
+    content: "\020";
+    display: none;
+    height: 2px;
+    margin: 1rem 0;
+    width: 1em;
+}
