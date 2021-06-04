@@ -1,0 +1,17 @@
+/* CSS Document
+
+Theme Name:    Sugar Pilotes OceanWP
+Template:    oceanwp
+Author:      Eryk Piotr Munk
+Version:      1.0.2
+Description:  Stylish Child Theme based on OceanWP
+
+*/
+
+.page-header {
+    display: none !important;
+}
+
+#site-header {
+    background-color: aqua;
+}

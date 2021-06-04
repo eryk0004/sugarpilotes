@@ -1,0 +1,376 @@
+.page-header {
+    display: none !important;
+}
+
+#liste {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    grid-gap: 5rem;
+    align-content: center;
+    margin-bottom: 10rem;
+
+}
+
+#singleviewslikkepind {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5rem;
+    align-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#singleviewslikkepind .billedeindhold {
+    max-width: 100%;
+    margin: 3rem;
+    padding: 2rem;
+
+}
+
+div.swiper-slide:nth-child(6) > a:nth-child(1) > div:nth-child(2),
+.elementor-element-942755e > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > a:nth-child(1) > div:nth-child(2),
+div.swiper-slide:nth-child(8) {
+    font-family: 'Houschka Pro';
+}
+
+div.swiper-slide:nth-child(8) > a:nth-child(1) > div:nth-child(2) {
+    font-family: 'Houschka Pro';
+}
+
+div.swiper-slide:nth-child(7) > a:nth-child(1) > div:nth-child(2) {
+    font-family: 'Houschka Pro';
+}
+
+div.swiper-slide:nth-child(9) > a:nth-child(1) > div:nth-child(2) {
+    font-family: 'Houschka Pro';
+}
+
+div.swiper-slide:nth-child(10) > a:nth-child(1) > div:nth-child(2) {
+    font-family: 'Houschka Pro';
+}
+
+.indholdsingle {
+
+    margin: 13rem 10rem 0rem 0rem;
+}
+
+@font-face {
+    font-family: 'amcap_eternalregular';
+    src: url('amcap_eternal-webfont.woff2') format('woff2'),
+        url('amcap_eternal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'houschkamediumregular';
+    src: url('houschkamedium_regular-webfont.woff2') format('woff2'),
+        url('houschkamedium_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Houschka Pro';
+    src: url('HouschkaPro-Medium.eot');
+    src: local('Houschka Pro Medium'), local('HouschkaPro-Medium'),
+        url('HouschkaPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('HouschkaPro-Medium.woff2') format('woff2'),
+        url('HouschkaPro-Medium.woff') format('woff'),
+        url('HouschkaPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+#mainshop {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content-area {
+    float: none;
+    position: none;
+    width: 100%;
+    padding-right: 0px;
+    border-style: none;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.knap {
+    background-color: #FFAFCC;
+    border: none;
+    color: white;
+    padding: 5px 35px 5px 35px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.4s ease-in-out;
+    font-family: 'Houschka Pro';
+    margin-right: 20px;
+}
+
+.tilbageknap {
+    background-color: #A2D2FF;
+    border: none;
+    color: white;
+    padding: 5px 35px 5px 35px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.4s ease-in-out;
+    font-family: 'Houschka Pro';
+}
+
+.knap:hover,
+.tilbageknap:hover {
+    transform: scale(1.1);
+}
+
+.lang_beskrivelse {
+    font-family: 'Houschka Pro';
+}
+
+
+article .knapcenter {
+    text-align: center;
+    align-content: center;
+}
+
+.kort_beskrivelse {
+    margin: 0px;
+}
+
+button.filter:nth-child(1) {
+    background-color: #CCFFC8;
+    border: none;
+    color: black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+button.filter:nth-child(2) {
+    background-color: #F9A57A;
+    border: none;
+    color: black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+button.filter:nth-child(3) {
+    background-color: #FFAFCC;
+    border: none;
+    color: black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+button.filter:nth-child(4) {
+    background-color: #A2D2FF;
+    border: none;
+    color: black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+button.filter:nth-child(5) {
+    background-color: #cdb4db;
+    border: none;
+    color: black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+button.filter:nth-child(6) {
+    background-color: #fcf6bd;
+    border: none;
+    color: black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+
+button.filter:nth-child(1),
+button.filter:nth-child(2),
+button.filter:nth-child(3),
+button.filter:nth-child(4),
+button.filter:nth-child(5),
+button.filter:nth-child(6) {
+    transition: transform 0.4s ease-in-out;
+}
+
+button.filter:nth-child(1),
+button.filter:nth-child(2),
+button.filter:nth-child(3),
+button.filter:nth-child(4),
+button.filter:nth-child(5),
+button.filter:nth-child(6),
+.kort_beskrivelse,
+.styk {
+    font-family: 'Houschka Pro';
+
+}
+
+.title,
+.pris {
+    font-family: 'Houschka Pro';
+    font-weight: 600;
+    text-align: center;
+}
+
+.styk,
+.kort_beskrivelse {
+    text-align: center;
+}
+
+button.filter:nth-child(1):hover,
+button.filter:nth-child(2):hover,
+button.filter:nth-child(3):hover,
+button.filter:nth-child(4):hover,
+button.filter:nth-child(5):hover,
+button.filter:nth-child(6):hover {
+    transform: scale(1.1);
+}
+
+#filtrering {
+    padding: 10px 10px 40px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.4s ease-in-out;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5rem;
+    justify-content: center;
+}
+
+.travelto {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'amcap_eternalregular';
+    color: #FFAFCC;
+    font-size: 4rem;
+}
+
+#footer-widgets,
+#footer-bottom,
+#top-bar {
+    display: none;
+}
+
+#svgtakeoff {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+
+    .kort_beskrivelse {
+        /*        padding: 0px 20px 0px 20px;*/
+        text-align: center;
+        padding: 0px 20px 0 20px;
+
+    }
+
+    .indholdsingle {
+        /*        padding: 0px 20px 0px 20px;*/
+        text-align: center;
+        margin: 0.5rem 4rem 4rem 4rem;
+
+    }
+
+    #singleviewslikkepind .title {
+        margin-top: 0;
+    }
+
+    #singleviewslikkepind .billedeindhold {
+
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+
+    }
+
+    #loopviewslikkepind .billede {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+
+    #filtrering {
+        padding: 10px 10px 40px 10px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.4s ease-in-out;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 5rem;
+    }
+
+    #svgtakeoff {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .knap {
+
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+.pris,
+.styk {
+    text-align: center;
+    margin: 0 0 0px;
+}
+
+.pris {
+    padding-bottom: 10px;
+}
+
+
+.billedeindhold {
+    margin: 0 40px 0 45px;
+}
+
+#filtrering {
+    grid-gap: 2rem;
+}
+
+}
+
+.titel {
+    font-family: 'amcap_eternalregular';
+}

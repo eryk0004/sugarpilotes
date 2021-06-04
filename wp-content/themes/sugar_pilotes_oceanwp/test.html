@@ -1,0 +1,26 @@
+<script>
+    const dbUrl = "https://piotrmunk.dk/kea/sugarpilotes/wp-json/wp/v2/slikkepind?per_page=100";
+    const catUrl = "https://piotrmunk.dk/kea/sugarpilotes/wp-json/wp/v2/categories";
+
+    async function getJson() {
+        console.log(catUrl);
+        const data = await fetch(dbUrl);
+        const catdata = await fetch(catUrl);
+        slikkepinde = await data.json();
+        categories = await catdata.json();
+        console.log("CATEGORIES", categories);
+        visSlikkepinde();
+        opretknapper();
+    }
+
+    function visSlikkepinde() {
+        console.log(slikkepinde)
+    };
+
+    function opretknapper() {
+        console.log(categories)
+    };
+
+    getJson();
+
+</script>
