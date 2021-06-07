@@ -51,22 +51,22 @@ get_header();
         /* Her opstilles variabler*/
         let slikkepind;
 
-        /* denne variabel er nødvendig for at kunne opstille et single-view for den aktuelle podcast og dens tilhørende episoder*/
+        /* denne variabel er nødvendig for at kunne opstille et single-view for den aktuelle slikkepind
         /*den henter sloggens id (som er et tal) ved hjælp af php*/
 
         let aktuelslikkepind = <?php echo get_the_ID() ?>;
 
 
-        /*Her laver vi vores eget endpoint, hvor der peges på en podcast + dens tal*/
+        /*Her laver vi vores eget endpoint, hvor der peges på en slikkepind + dens tal*/
         const dbUrl = "https://piotrmunk.dk/kea/sugarpilotes/wp-json/wp/v2/slikkepind/" + aktuelslikkepind;
 
 
         async function getJson() {
-            /*Her fetcher vi den aktuelle podcast */
+            /*Her fetcher vi den aktuelle slikkepind */
             const data = await fetch(dbUrl);
             slikkepind = await data.json();
 
-            /*Her kaldes funktionerne */
+            /*Her kaldes funktionen */
             visSlikkepind();
         }
 

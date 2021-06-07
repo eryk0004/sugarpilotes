@@ -11,6 +11,8 @@
 
 get_header(); ?>
 
+<head></head>
+
 <template>
     <article>
         <div class="billedeindhold">

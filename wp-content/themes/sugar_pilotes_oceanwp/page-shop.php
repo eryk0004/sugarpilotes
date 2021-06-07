@@ -47,15 +47,25 @@ get_header(); ?>
     <script>
         "use strict"
         console.log("hejbassemand");
+
+        /* Her opstilles variabler*/
+
         let slikkepinde;
         let categories;
         let filterSlikkepind = "alle";
 
+        /* ------------- */
+
+        /*Her laver vi vores eget endpoint, hvor der peges på en slikkepind og tilhørende kategorier */
+
         const dbUrl = "https://piotrmunk.dk/kea/sugarpilotes/wp-json/wp/v2/slikkepind?per_page=100";
         const catUrl = "https://piotrmunk.dk/kea/sugarpilotes/wp-json/wp/v2/categories";
 
+        /* ------------- */
+
         //
         async function getJson() {
+            /*Her fetcher vi slikkepindene og kategorierene */
             const data = await fetch(dbUrl);
             const catdata = await fetch(catUrl);
             slikkepinde = await data.json();
@@ -66,6 +76,7 @@ get_header(); ?>
         }
 
         function opretknapper() {
+            /*Her oprettes knapper*/
 
             categories.forEach(cat => {
                 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-slikkepind="${cat.id}">${cat.name}</button>`;
@@ -74,12 +85,15 @@ get_header(); ?>
         }
 
         function addEventListenerToButtons() {
+            /*I denne function tages der fat i knappen, for at tilføje en eventlistener, som skal "lytte" efter et klik*/
             document.querySelectorAll("#filtrering button").forEach(elm => {
+                /*Når der derefter er blevet klikket, igangsættes en ny function som føres til function filtrering*/
                 elm.addEventListener("click", filtrering);
             })
         };
 
         function filtrering() {
+            /*Her filtreres slikkepindene så de passer til den valgte kategori, der er blevet klikket på*/
             filterSlikkepind = this.dataset.slikkepind;
             console.log(filterSlikkepind);
 
@@ -87,6 +101,9 @@ get_header(); ?>
         }
 
         function visSlikkepinde() {
+
+            /*Her udskrives alt indhold til hver slikkepinde, billede, tekster, knapper m.m.*/
+
             let temp = document.querySelector("template");
 
             let container = document.querySelector("#liste");
